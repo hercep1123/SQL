@@ -1,0 +1,18 @@
+--Orders item by price
+SELECT *
+FROM superstore
+ORDER BY price;
+
+--highest value item
+SELECT MAX(price), item_name
+FROM superstore;
+
+--average price of kitchen supplies
+SELECT AVG(price)
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+
+--total stock of kitchen supplies
+SELECT SUM(stock_quantity)
+FROM superstore
+WHERE category = 'Kitchen Supplies';
