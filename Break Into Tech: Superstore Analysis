@@ -12,7 +12,12 @@ SELECT AVG(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
---total stock of kitchen supplies
+--total stock of electronics
 SELECT SUM(stock_quantity)
 FROM superstore
-WHERE category = 'Kitchen Supplies';
+WHERE category = 'Electronics';
+
+--show all items in electronics and stock of each item (extra)
+SELECT item_name, stock_quantity
+FROM superstore
+WHERE category = 'Electronics';
